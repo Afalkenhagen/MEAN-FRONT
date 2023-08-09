@@ -7,7 +7,8 @@ import { Producto } from '../models/producto';
   providedIn: 'root'
 })
 export class ProductoService {
-  url = 'http://localhost:4000/api/productos/';
+  url = 'https://mean-back-t267.onrender.com/api/productos/';
+  //url = 'http://localhost:4000/api/productos/';
   constructor(private http: HttpClient) { }
   getProductos(): Observable<any> {
     return this.http.get(this.url);
